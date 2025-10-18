@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Bubbling Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 40px;
+    }
+    div {
+      border: 2px solid #007bff;
+      padding: 50px;
+      background-color: #f0f8ff;
+      display: inline-block;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    pre {
+      text-align: left;
+      margin: 30px auto;
+      width: 80%;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #fafafa;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Event Bubbling Demo</h1>
+  <div>
+    <button>Click me</button>
+  </div>
+
+  <pre id="log"></pre>
+
+  <script src="main.js"></script>
+</body>
+</html>
