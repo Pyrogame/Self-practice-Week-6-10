@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Display Settings</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .container {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 12px;
+      width: 300px;
+      margin: auto;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    select, input[type="color"], button {
+      padding: 6px;
+      margin: 5px 0;
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+    }
+
+    #saveBtn {
+      background-color: #007bff;
+    }
+
+    #saveBtn:hover {
+      background-color: #0056b3;
+    }
+
+    #resetBtn {
+      background-color: #dc3545;
+    }
+
+    #resetBtn:hover {
+      background-color: #b02a37;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Website Display Settings</h2>
+
+    <label for="bgColor">Background Color:</label>
+    <input type="color" id="bgColor">
+
+    <label for="fontColor">Font Color:</label>
+    <input type="color" id="fontColor">
+
+    <label for="fontSize">Font Size:</label>
+    <select id="fontSize">
+      <option value="small">Small</option>
+      <option value="medium" selected>Medium</option>
+      <option value="large">Large</option>
+    </select>
+
+    <button id="saveBtn">Save Settings</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <script src="main.js" type="module" ></script>
+
+</body>
+</html>
+ 
